@@ -1,0 +1,72 @@
+/* { margin: 0; padding: 0; }*/
+
+.wrapper { width: 50%; margin: 0 auto; }
+
+p { margin-bottom: 0.5em; }
+
+form .field { margin-bottom: 1em; clear: left; }
+form label, form span.label { width: 100px; float: left; }
+form input[type=text], form input[type=password] { width: 200px; padding: 3px; }
+form select { width: 204px; }
+form div.checkbox, form div.radio { float: left; }
+form div.checkbox label { width: 300px; padding-right: 5px;}
+form div.radio input { margin-right: 8px; }
+form textarea { width: 200px; height: 86px; float: left; }
+form .info { float: left; margin-left: 5px; }
+form .counter { clear: left; float: left; }
+form .buttons { clear: both; float: left; margin-top: 1em; }
+form .buttons input { padding: 4px; }
+
+form .invalid input, form .invalid select, input.error, select.error
+{ border: 1px solid #c66; background: #fee;}
+
+.errors { margin-bottom: 1em; padding: 0.5em; border: 1px solid #c66; background: #fee;  }
+.errors ul { margin-left: 2em; }
+.errors li { margin-bottom: 0.5em; }
+
+.hidden { display: none; }
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body {
+  padding: 50px;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'Oswald', sans-serif;
+  background-color: #C0F0E5;
+}
+h1{
+	font-size: 40;
+	font-weight: 700;
+}
+h2{
+	font-weight: 700;
+	font-size: 24;
+	padding-bottom: 4%;
+}
+#adalgamur {
+	background-color: #F0C0CB;
+	padding-right: 5%; 
+	padding-left: 5%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+.btn-group{
+	padding-bottom: 3%;
+}
+.input-group{
+	padding-bottom: 3%;
+}
+.glediGamur{
+	background-color: #4EF2CD	;
+	padding-right: 10%; 
+	padding-left: 10%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+.errorGamur{
+	background-color: #F24E73	;
+	padding-right: 10%; 
+	padding-left: 10%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}

@@ -1,0 +1,14 @@
+doctype html
+html(lang='is')
+  head
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css') 
+  body
+    div(class='col-md-8 col-md-offset-2' id='adalgamur')
+      if user
+        p Inni sem #{user.username}.
+        a(href='/logout') Útskrá
+
+      block content

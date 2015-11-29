@@ -1,4 +1,17 @@
-# groubchat
-author: mattisig (codakongur) 
-website that alows users to do things
-groubchat is a site that alows users to create simple, usable, safe chatrooms with exclusive access
+
+# Verkefni 6 sýnilausn
+
+## Uppsetning
+
+Stilla gagnagrunn í `.env`
+
+```bash
+> npm install
+> gulp inspect
+> node scripts/schema.js (þetta mun eyða *öllu* og búa til töflur aftur)
+> npm start
+```
+
+Einnig er hægt að keyra `schema.sql` sérstaklega inn í gagnagrunn.
+
+Útlit viljandi herfilegt.

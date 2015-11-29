@@ -1,0 +1,21 @@
+extends layout
+include mixins
+
+block content
+  h1 Bæta við færslu á vegg
+
+  if submitted && errors
+    .errors
+      ul
+        each field in form
+          if !field.valid && field.validationString
+            li: label(for=field.name)= field.validationString
+        if addError
+          li Villa kom upp við að skrá færslu
+
+  form(method='post', action='/add')
+    each field in form
+      +field(field, submitted)
+    div.buttons: button Bæta við
+
+  p: a(href='/') Aftur á vegg

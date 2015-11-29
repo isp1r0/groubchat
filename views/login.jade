@@ -1,0 +1,30 @@
+extends layout
+include mixins
+
+block content
+  h1 intro
+
+  if submitted && errors
+    .errors
+      ul
+        each field in form
+          if !field.valid && field.validationString
+            li: label(for=field.name)= field.validationString
+        if loginError
+          li Villa kom upp við innskráningu
+
+  form(method='post', action='/login')
+    each field in form
+      +field(field, submitted)
+    div: button Innskrá
+
+  p: a(href='/create') Búa til notanda
+
+  form(action="/charge", method="post")
+    script(
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_clEM92svCljf0D8LSbETH1Ng"
+      data-amount="2000"
+      data-name="Demo Site"
+      data-description="2 widgets ($20.00)"
+      data-image="/images/giveme.png")
